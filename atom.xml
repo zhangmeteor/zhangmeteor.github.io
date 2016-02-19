@@ -4,7 +4,7 @@
   <title><![CDATA[小萌的代码世界]]></title>
   <link href="http://zhangmeteor.github.io/atom.xml" rel="self"/>
   <link href="http://zhangmeteor.github.io/"/>
-  <updated>2016-02-20T02:03:21+08:00</updated>
+  <updated>2016-02-20T02:06:20+08:00</updated>
   <id>http://zhangmeteor.github.io/</id>
   <author>
     <name><![CDATA[小萌]]></name>
@@ -25,15 +25,6 @@
 <h6>I stop my job, try to figure out why this happens. I start to search Apple&rsquo;s document, and found something I have known before but never think about. The NSFoundation most mutable class is thread unsafe.But the usual way I used is to change dictionary in concurrent enumerate, that&rsquo;s why the result not predictable.</h6>
 
 <h4>so in iOS world, we should never change mutable class in concurrent way. Unless use thread lock.</h4>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test New Blog]]></title>
-    <link href="http://zhangmeteor.github.io/blog/2016/02/19/test-new-blog/"/>
-    <updated>2016-02-19T14:10:49+08:00</updated>
-    <id>http://zhangmeteor.github.io/blog/2016/02/19/test-new-blog</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
