@@ -9,7 +9,7 @@
 	<meta name="author" content="小萌">
 
 	
-	<meta name="description" content="Cocurrent Trap cocurrent trap Apple prefer their developer use block. So they offer enumerate API which you can use block to replace the old for &hellip;">
+	<meta name="description" content="Cocurrent Trap Apple prefer their developer use block. So they offer enumerate API which you can use block to replace the old for loop way. and &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,9 +86,7 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<h1 class="title" itemprop="name">Cocurrent Trap</h1>
-	<div class="entry-content" itemprop="articleBody"><h1>cocurrent trap</h1>
-
-<h4>Apple prefer their developer use block. So they offer enumerate API which you can use block to replace the old for loop way. and because efficiency problem, Apple also add an concurrent enumerate API to solve this problem. Since I found it, i love the concurrent API and use it any time I can.</h4>
+	<div class="entry-content" itemprop="articleBody"><h4>Apple prefer their developer use block. So they offer enumerate API which you can use block to replace the old for loop way. and because efficiency problem, Apple also add an concurrent enumerate API to solve this problem. Since I found it, i love the concurrent API and use it any time I can.</h4>
 
 <h4>But unfortunately, I made a big mistake. When I use enumerateKeysAndObjectsUsingBlock to look through all NSDictionary elements and change the dictionary value with some caculate. Something oops, the calculate result is obvious, but the dictionary sometimes contains &ldquo;(null)=(null)&rdquo; element instead the real result after calculate. And some extremely times, it crash! Why? because the unstable result, I suddenly realize the source is concurrent.</h4>
 
