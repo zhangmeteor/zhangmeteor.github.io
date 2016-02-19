@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://zhangmeteor.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: 小萌的代码世界
+subtitle: iOS developer blog
+author: 小萌
 simple_search: https://www.google.com/search
 description:
 
@@ -71,7 +71,7 @@ github_skip_forks: true
 
 # Twitter
 twitter_user:
-twitter_tweet_button: true
+twitter_tweet_button: false
 
 # Google +1
 google_plus_one: false
@@ -91,8 +91,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: 
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
