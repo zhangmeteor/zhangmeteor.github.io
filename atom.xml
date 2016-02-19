@@ -4,7 +4,7 @@
   <title><![CDATA[小萌的代码世界]]></title>
   <link href="http://zhangmeteor.github.io/atom.xml" rel="self"/>
   <link href="http://zhangmeteor.github.io/"/>
-  <updated>2016-02-20T02:09:31+08:00</updated>
+  <updated>2016-02-20T02:15:59+08:00</updated>
   <id>http://zhangmeteor.github.io/</id>
   <author>
     <name><![CDATA[小萌]]></name>
@@ -23,7 +23,7 @@
 </ol>
 
 
-<p>in Objective-C, there’s many system keyword you can not use, besides that, the system also has banned some prefix method name.</p>
+<p>  in Objective-C, there’s many system keyword you can not use, besides that, the system also has banned some prefix method name.</p>
 
 <p>Such as “init” prefix. the “init” prefix method only can be used when the method return instanceType value.because “initxxx” is designed to initilaize class instance by syntax.</p>
 
@@ -50,13 +50,13 @@ As we know about copy in Objective-C, if you want an custom object support copy 
     <link href="http://zhangmeteor.github.io/blog/2016/02/20/cocurrent-trap/"/>
     <updated>2016-02-20T00:20:17+08:00</updated>
     <id>http://zhangmeteor.github.io/blog/2016/02/20/cocurrent-trap</id>
-    <content type="html"><![CDATA[<h6>Apple prefer their developer use block. So they offer enumerate API which you can use block to replace the old for loop way. and because efficiency problem, Apple also add an concurrent enumerate API to solve this problem. Since I found it, i love the concurrent API and use it any time I can.</h6>
+    <content type="html"><![CDATA[<p>Apple prefer their developer use block. So they offer enumerate API which you can use block to replace the old for loop way. and because efficiency problem, Apple also add an concurrent enumerate API to solve this problem. Since I found it, i love the concurrent API and use it any time I can.</p>
 
-<h6>But unfortunately, I made a big mistake. When I use enumerateKeysAndObjectsUsingBlock to look through all NSDictionary elements and change the dictionary value with some caculate. Something oops, the calculate result is obvious, but the dictionary sometimes contains &ldquo;(null)=(null)&rdquo; element instead the real result after calculate. And some extremely times, it crash! Why? because the unstable result, I suddenly realize the source is concurrent.</h6>
+<p>But unfortunately, I made a big mistake. When I use enumerateKeysAndObjectsUsingBlock to look through all NSDictionary elements and change the dictionary value with some caculate. Something oops, the calculate result is obvious, but the dictionary sometimes contains &ldquo;(null)=(null)&rdquo; element instead the real result after calculate. And some extremely times, it crash! Why? because the unstable result, I suddenly realize the source is concurrent.</p>
 
-<h6>I stop my job, try to figure out why this happens. I start to search Apple&rsquo;s document, and found something I have known before but never think about. The NSFoundation most mutable class is thread unsafe.But the usual way I used is to change dictionary in concurrent enumerate, that&rsquo;s why the result not predictable.</h6>
+<p>I stop my job, try to figure out why this happens. I start to search Apple&rsquo;s document, and found something I have known before but never think about. The NSFoundation most mutable class is thread unsafe.But the usual way I used is to change dictionary in concurrent enumerate, that&rsquo;s why the result not predictable.</p>
 
-<h4>so in iOS world, we should never change mutable class in concurrent way. Unless use thread lock.</h4>
+<p>So in iOS world, we should never change mutable class in concurrent way. Unless use thread lock.</p>
 ]]></content>
   </entry>
   
